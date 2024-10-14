@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table{
+            height: 200px;
+            width: 500px;
+            padding: 10px 5px 10px 5px;
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
-    <img src="https://wallpapers.com/images/featured/virat-kohli-yc8dfpcjssp3s4se.jpg" alt="virat" height="100px" width="100px">
-    <video src="C:\masai_html\video\a.mp4" height="100px" width="100px"></video>
+    <table border="2">
+        <tr style="background-color: green;">
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price per Unit</th>
+            <th>Description</th>
+            <th>Total Price</th>
+        </tr>
+        <tr>
+            <td>Product 1</td>
+            <td>2</td>
+            <td>$10</td>
+            <td>This is product 1</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>Product 2</td>
+            <td>3</td>
+            <td>$20</td>
+            <td>This is product 2</td>
+            <td>$60</td>
+        </tr>
+        <tr>
+            <th scope="row" colspan="2">Sum</th>
+            <td style="text-align: right">$80</td>
+        </tr>
 
+    </table>
 </body>
 </html>

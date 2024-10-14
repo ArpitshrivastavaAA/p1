@@ -4,38 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(165, 42, 54);
+        }
+        form{
+            text-align: center;
+            font-weight: bold;
+        }
+        button{
+            background-color: green;
+        }
+    </style>
 </head>
 <body>
-    <div>
-    <table border="2">
-        <tr>
-            <th>Product Name</th>
-            <th>Quantity</th>
-            <th>Price per Unit</th>
-            <th>Description</th>
-            <th>Total Price</th>
-        </tr>
-        <tr>
-            <td>Product 1</td>
-            <td>2</td>
-            <td>$10</td>
-            <td>This is product 1</td>
-            <td>$20</td>
-        </tr>
-        <tr>
-            <td>Product 2</td>
-            <td>3</td>
-            <td>$20</td>
-            <td>This is product 2</td>
-            <td>$60</td>
-        </tr>
-        <tr>
-            <th scope="row" colspan="2">Sum</th>
-            <td style="text-align: right">$80</td>
-        </tr>
-        
+    <form action="Feedback Form">
+        <label for="Feedback Type">Feedback Type</label> <br>
+        <select name="Compliment" id="Compliment" >
+            <option value="Compliments">Compliment</option> </select> <br> <br>
+        <label for="Message">Message</label> <br>
+        <textarea id="story" name="story" rows="5" cols="33">
+            
+        </textarea><br> <br>
+        <label for="Website Rating">Website Rating</label> <br>
+        <input type="radio">
+        <label for="Excellent">Excellent</label>
+        <input type="radio">
+        <label for="Excellent">Good</label>
+        <input type="radio">
+        <label for="Average">Average</label>
+        <input type="radio">
+        <label for="Poor">Poor</label> <br> <br>
+        <label for="Age">Age(10-100):</label> <br>
+        <input type="text"> <br> <br>
+        <label for="email">Email*:</label> <br>
+        <input type="text"> <br> <br>
+        <label for="password">Password(min. 8 character):</label> <br>
+        <input type="text"> <br> <br>
+        <label for="website">Website URL (optional)</label> <br>
+        <input type="text"> <br> <br>
+        <input type="checkbox"> 
+        <label for="abc">I agree to the terms and conditions</label> <br>
+        <button type="submit">Submit</button>
 
-    </table>
-</div>
+        
+            
+
+
+
+
+
+    </form>
 </body>
 </html>
